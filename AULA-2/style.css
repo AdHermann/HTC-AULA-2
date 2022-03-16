@@ -24,8 +24,14 @@ body {
   font-size: 14px;
 }
 
-.box 
-{display: flex;
-    flex-direction: column;
+.box {
+  display: flex;
+  flex-direction: column;
+}
 
+.name-field {
+  width: 396px;
+  height: 47px;
+  top: 22px;
+  color: blue;
 }

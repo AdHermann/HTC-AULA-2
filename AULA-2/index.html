@@ -21,46 +21,57 @@
     </div>
 
     <div class="box">
-      <label>Data de Nascimento</label>
-      <input type="date" />
+      <label for="date-field">Data de Nascimento</label>
+      <input type="date" id="date-field" />
     </div>
 
     <div class="box">
-      <label>País</label>
-      <select>
+      <label for="country-field">País</label>
+      <select id="country-field">
         <option>Brasil</option>
         <option>Argentina</option>
+        <option>Chile</option>
+        <option>Uruguai</option>
       </select>
     </div>
 
     <label>Genêro</label>
-    <input type="radio" name="inpute-genre" />
-    <input type="radio" name="inpute-genre" />
-    <input type="radio" name="inpute-genre" />
-
-    <div class="box">
-      <label>E-mail</label>
-      <input type="text" placeholder="Digite seu E-mail" />
+    <div class="gender-radio">
+      <input type="radio" name="inpute-genre" id="feminine-radio" />
+      <label for="feminine-radio">Feminino</label>
+      <input type="radio" name="inpute-genre" id="masculine-radio"/>
+      <label for="masculine-radio">Masculino</label>
+      <input type="radio" name="inpute-genre" id="dont-declare-radio"/>
+      <label for="dont-declare-radio">Não declarar</label>
     </div>
 
     <div class="box">
-      <label>Senha</label>
-      <input type="password" placeholder="Crie sua senha" />
+      <label for="email-field">E-mail</label>
+      <input type="text" placeholder="Digite seu E-mail" id="email-field" />
     </div>
 
     <div class="box">
-      <label>Confirmar Senha</label>
-      <input type="password" placeholder="Confirme sua senha" />
+      <label for="password-field">Senha</label>
+      <input type="password" placeholder="Crie sua senha" id="password-field" />
     </div>
 
-    <input type="checkbox" />
-    <p>
+    <div class="box">
+      <label for="confirm-password-field">Confirmar Senha</label>
+      <input
+        type="password"
+        placeholder="Confirme sua senha"
+        id="confirm-password-field"
+      />
+    </div>
+
+    <input type="checkbox" id="EULA-field" />
+    <label for="EULA-field">
       Aceito os termos e condições e concordo com as políticas de privacidade do
       Hall To Code.
-    </p>
+    </label>
 
     <button>Cadastrar</button>
 
-    <p>Já tem uma conta no Hall To Code? Entre agora</p>
+    <label>Já tem uma conta no Hall To Code? Entre agora</label>
   </body>
 </head>
