@@ -1,5 +1,5 @@
 <head>
-  <title>Aula - 2 Formulário</title>
+  <title>HTC - Formulário</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -20,67 +20,87 @@
           type="text"
           placeholder="Digite seu nome completo"
           id="name-field"
+          class="field-input"
+          required
+        />
+      </div>
+
+      <div class="double-box">
+        <div class="box space-between">
+          <label class="label-field" for="date-field">Data de Nascimento</label>
+          <input type="date" id="date-field" required class="field-input" />
+        </div>
+
+        <div class="box space-between">
+          <label class="label-field" for="country-field">País</label>
+          <select id="country-field" class="select">
+            <option>Selecione...</option>
+            <option>Brasil</option>
+            <option>Argentina</option>
+            <option>Chile</option>
+            <option>Uruguai</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="box-genre box">
+        <span class="genre-title">Genêro:</span>
+        <div class="options-genre">
+          <input type="radio" name="inpute-genre" id="feminine-radio" />
+          <label for="feminine-radio">Feminino</label>
+          <input type="radio" name="inpute-genre" id="masculine-radio" />
+          <label for="masculine-radio">Masculino</label>
+          <input type="radio" name="inpute-genre" id="dont-declare-radio" />
+          <label for="dont-declare-radio">Não declarar</label>
+        </div>
+      </div>
+
+      <div class="box">
+        <label class="label-field" for="email-field">E-mail</label>
+        <input
+          type="text"
+          placeholder="Digite seu E-mail"
+          id="email-field"
+          class="field-input"
           required
         />
       </div>
 
       <div class="box">
-        <label for="date-field">Data de Nascimento</label>
-        <input type="date" id="date-field" />
-      </div>
-
-      <div class="box">
-        <label for="country-field">País</label>
-        <select id="country-field">
-          <option>Brasil</option>
-          <option>Argentina</option>
-          <option>Chile</option>
-          <option>Uruguai</option>
-        </select>
-      </div>
-
-      <label>Genêro</label>
-      <div class="gender-radio">
-        <input type="radio" name="inpute-genre" id="feminine-radio" />
-        <label for="feminine-radio">Feminino</label>
-        <input type="radio" name="inpute-genre" id="masculine-radio" />
-        <label for="masculine-radio">Masculino</label>
-        <input type="radio" name="inpute-genre" id="dont-declare-radio" />
-        <label for="dont-declare-radio">Não declarar</label>
-      </div>
-
-      <div class="box">
-        <label for="email-field">E-mail</label>
-        <input type="text" placeholder="Digite seu E-mail" id="email-field" />
-      </div>
-
-      <div class="box">
-        <label for="password-field">Senha</label>
+        <label class="label-field" for="password-field">Senha</label>
         <input
           type="password"
           placeholder="Crie sua senha"
           id="password-field"
+          class="field-input"
+          required
         />
       </div>
 
       <div class="box">
-        <label for="confirm-password-field">Confirmar Senha</label>
+        <label class="label-field" for="confirm-password-field"
+          >Confirmar Senha</label
+        >
         <input
           type="password"
           placeholder="Confirme sua senha"
           id="confirm-password-field"
+          class="field-input"
+          required
         />
       </div>
 
-      <input type="checkbox" id="EULA-field" />
-      <label for="EULA-field">
-        Aceito os termos e condições e concordo com as políticas de privacidade
-        do Hall To Code.
-      </label>
+      <div class="terms">
+        <input class="checkbox-field" type="checkbox" id="EULA-field" />
+        <label for="EULA-field">
+          Aceito os <a href="#">termos e condições</a> e concordo com as
+          <a href="#">políticas de privacidade</a> do Hall To Code.
+        </label>
+      </div>
 
-      <button>Cadastrar</button>
+      <button class="button">Cadastrar</button>
 
-      <label>Já tem uma conta no Hall To Code? Entre agora</label>
+      <label class="account">Já tem uma conta no Hall To Code? <a href="#">Entre agora</a></label>
     </form>
   </section>
 </body>
