@@ -1,7 +1,51 @@
 <head>
   <link href="../style.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body>
+<body>
+  <section class="container">
+    <form>
       <h1 class="title">Faça seu login</h1>
-  </body>
+
+      <div class="box">
+        <label class="label-field" for="email-field">E-mail</label>
+        <input
+          type="text"
+          placeholder="Digite seu E-mail"
+          id="email-field"
+          class="field-input"
+          required
+        />
+      </div>
+
+      <div class="box">
+        <label class="label-field" for="password-field">Senha</label>
+        <input
+          type="password"
+          placeholder="Digite sua senha"
+          id="password-field"
+          class="field-input"
+          required
+        />
+      </div>
+
+      
+      <div class="double-box genre-select-box">
+        <div class="terms">
+          <input class="checkbox-field" type="checkbox" id="connect-field" />
+          <label class="space-between" for="connect-field">Mantenha-me conectado</label>
+        </div>
+
+        <label class="account space-between"> <a href="#">Esqueci minha senha</a></label>
+      </div>
+
+
+      <button class="button">Entrar</button>
+
+      <label class="account"
+        >Ainda não tem uma conta?
+        <a href="../index.html">Cadastre-se</a></label
+      >
+    </form>
+  </section>
+</body>

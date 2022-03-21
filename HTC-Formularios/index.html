@@ -45,13 +45,34 @@
 
       <div class="box-genre box">
         <span class="genre-title">Genêro:</span>
-        <div class="options-genre">
-          <input type="radio" name="inpute-genre" id="feminine-radio" />
-          <label for="feminine-radio">Feminino</label>
-          <input type="radio" name="inpute-genre" id="masculine-radio" />
-          <label for="masculine-radio">Masculino</label>
-          <input type="radio" name="inpute-genre" id="dont-declare-radio" />
-          <label for="dont-declare-radio">Não declarar</label>
+        <div class="genre-select-box">
+          <div class="select-genre">
+            <input
+              class="radio-input"
+              type="radio"
+              name="inpute-genre"
+              id="feminine-radio"
+            />
+            <label class="genre" for="feminine-radio">Feminino</label>
+          </div>
+          <div class="select-genre">
+            <input
+              class="radio-input"
+              type="radio"
+              name="inpute-genre"
+              id="masculine-radio"
+            />
+            <label class="genre" for="masculine-radio">Masculino</label>
+          </div>
+          <div class="select-genre">
+            <input
+              class="radio-input"
+              type="radio"
+              name="inpute-genre"
+              id="dont-declare-radio"
+            />
+            <label class="genre" for="dont-declare-radio">Não declarar</label>
+          </div>
         </div>
       </div>
 
@@ -100,7 +121,9 @@
 
       <button class="button">Cadastrar</button>
 
-      <label class="account">Já tem uma conta no Hall To Code? <a href="#">Entre agora</a></label>
+      <label class="account"
+        >Já tem uma conta no Hall To Code? <a href="./html/login.html">Entre agora</a></label
+      >
     </form>
   </section>
 </body>
