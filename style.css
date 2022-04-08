@@ -12,13 +12,15 @@ body {
 }
 
 .container-register {
-  max-width: 396px;
+  box-sizing: border-box;
   width: 100%;
+  padding: 55px;
 }
 
 .container-login {
-  max-width: 515px;
+  box-sizing: border-box;
   width: 100%;
+  padding: 55px;
 }
 
 .form {
@@ -125,4 +127,22 @@ a {
 
 .account {
   margin-bottom: 30px;
+}
+
+@media (min-width:959px) {
+  .container-register, .container-login {
+    padding: 0 150px;
+  }
+}
+
+@media (min-width:1359px) {
+  .container-register, .container-login {
+    padding: 0 350px;
+  }
+}
+
+@media (min-width:2500px) {
+  .container-register, .container-login {
+    padding: 0 650px;
+  }
 }
